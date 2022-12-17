@@ -8,7 +8,7 @@ import { HeaderComponent } from './component/header/header.component';
 import { HomeComponent } from './component/home/home.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
-
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -21,6 +21,7 @@ import {MatIconModule} from '@angular/material/icon';
     AppRoutingModule,
     MatToolbarModule,
     MatIconModule,
+    MatCardModule,
     BrowserAnimationsModule
   ],
   providers: [
