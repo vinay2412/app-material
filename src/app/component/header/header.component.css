@@ -1,0 +1,56 @@
+.mat-toolbar-row{
+  display: inline;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  img{
+    width: auto;
+    position: fixed;
+    left: 15px;
+  }
+  .navbar {
+    flex: 100%;
+    display: none;
+  }
+  .mat-toolbar-row{
+    display: block;
+    justify-content: center;
+  }
+
+.right-sidebar{
+  display: none;
+}
+  mat-grid-tile.navbar.a{
+    display: block;
+
+  }
+}
+img {
+  width: auto;
+}
+button.mat-button .mat-icon,
+a.mat-button .mat-icon,
+a.mat-raised-button .mat-icon,
+a.mat-flat-button .mat-icon,
+a.mat-stroked-button .mat-icon {
+  vertical-align: top;
+}
+.search{
+padding: 1rem;
+}
+mat-icon{
+  padding-top: 3px;
+    padding-right: 8px;
+}
+
+.example-header-image {
+  background-image: url('../../../assets/John-Smith-engraving.webp');
+  width: 50px;
+  position: relative;
+  top: 0px;
+  left: -40px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
