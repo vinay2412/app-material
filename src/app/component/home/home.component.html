@@ -1,28 +1,89 @@
 <div class="flex-container">
   <div class="flex-item-left">
-    <mat-card>
-  <mat-card-header>
-    <mat-card-title>Actions Buttons</mat-card-title>
-    <mat-card-subtitle>Start</mat-card-subtitle>
-  </mat-card-header>
-  <mat-card-actions>
-    <button mat-button>LIKE</button>
-    <button mat-button>SHARE</button>
-  </mat-card-actions>
-</mat-card>
-
+    <mat-card class="example-card">
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-header class="card-header">
+        <mat-card-title>Jone Smith</mat-card-title>
+        <mat-card-subtitle>CFA, CIC</mat-card-subtitle>
+        <mat-card-subtitle><strong>Premimum member</strong></mat-card-subtitle>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-icon>school</mat-icon>
+        <span>Insureance Agent, Attorney, Accounttant</span>
+      </mat-card-content>
+      <hr />
+      <mat-card-actions>
+        <mat-icon color="accent">email</mat-icon>
+        <h2 color="accent">Send an Email</h2>
+      </mat-card-actions>
+    </mat-card>
   </div>
+
+  <!-- Right -->
   <div class="flex-item-right">
     <mat-card>
-      <mat-card-header>
-        <mat-card-title>Business Details</mat-card-title>
+      <mat-card-header class="main">
+        <span class="section">Business Details</span>
       </mat-card-header>
-      <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
-      </mat-card-actions>
-
+      <mat-card-content>
+        <mat-grid-list cols="2" rowHeight="100px" class="main_section" >
+          <mat-grid-tile id="left-sidebar" class="first_section">
+            <mat-icon>group</mat-icon>
+            <span>Profile</span>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            <button mat-raised-button class="btn-button" color="accent">Edit Profile</button>
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="2" rowHeight="30px">
+          <mat-grid-tile id="left-sidebar">
+            <h3>Name:</h3>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            Mary , jason & Hodge of Attorney
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="2" rowHeight="30px">
+          <mat-grid-tile id="left-sidebar">
+            <h3>Domain:</h3>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            www.mjhatattorenys.com
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="2" rowHeight="30px">
+          <mat-grid-tile id="left-sidebar">
+            <h3>Gender:</h3>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            Male
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="2" rowHeight="30px">
+          <mat-grid-tile id="left-sidebar">
+            <h3>Date of Birth:</h3>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            8th June 1979
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="2" rowHeight="30px">
+          <mat-grid-tile id="left-sidebar">
+            <h3>Phone:</h3>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            +8654381234
+          </mat-grid-tile>
+        </mat-grid-list>
+        <mat-grid-list cols="2" rowHeight="30px">
+          <mat-grid-tile id="left-sidebar">
+            <h3>Location:</h3>
+          </mat-grid-tile>
+          <mat-grid-tile id="right-sidebar">
+            12 street, Silicon Valiey Avenue NE, Huntsville
+          </mat-grid-tile>
+        </mat-grid-list>
+      </mat-card-content>
     </mat-card>
-
   </div>
 </div>
