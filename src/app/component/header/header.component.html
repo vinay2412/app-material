@@ -1,11 +1,27 @@
-<mat-toolbar color="white">
-  <mat-toolbar-row>
-    <!-- <img src="assets/NMD_Pharma.png"> -->
-    <div  class="main">
-      <a mat-button [routerLink]="'/'"><mat-icon>home</mat-icon> Home</a>
-      <a mat-button [routerLink]="'/'"><mat-icon>group</mat-icon>Trustees</a>
-      <a mat-button [routerLink]="'/'"><mat-icon>person</mat-icon>Professionals</a>
-      <a mat-button [routerLink]="'/'"><mat-icon>more_horiz</mat-icon>More</a>
-    </div>
-  </mat-toolbar-row>
-</mat-toolbar>
+<div class="container">
+  <mat-grid-list cols="4" rowHeight="100px">
+    <mat-grid-tile class="left-sidebar">
+      <img src="assets\images.png" />
+    </mat-grid-tile>
+    <mat-grid-tile id="main-content" colspan="2">
+      <!-- Main Content -->
+      <div class="navbar">
+        <a mat-button [routerLink]="'/'"><mat-icon>home</mat-icon> Home</a>
+        <a mat-button [routerLink]="'/'"><mat-icon>group</mat-icon>Trustees</a>
+        <a mat-button [routerLink]="'/'"
+          ><mat-icon>person</mat-icon>Professionals</a
+        >
+        <a mat-button [routerLink]="'/'"><mat-icon>more_horiz</mat-icon>More</a>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile class="right-sidebar">
+      <!-- Right Sidebar-->
+      <mat-icon class="search">search</mat-icon>
+      <button mat-raised-button color="accent">
+        <mat-icon>email</mat-icon>
+        invite
+      </button>
+      <div mat-card-avatar class="example-header-image"></div>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>
